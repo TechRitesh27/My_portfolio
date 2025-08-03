@@ -1,0 +1,107 @@
+:root {
+  --bg-dark: #0d0d0d;
+  --card-bg: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+}
+
+.experience-section {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  /* padding: 4rem 2rem; */
+  padding-bottom: 0.1rem;
+  text-align: center;
+}
+
+.experience-section h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: var(--accent);
+  color: #0f172a;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.experience-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+  transition: transform 0.3s ease;
+  max-width: 280px;
+  height: auto;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+}
+
+.experience-card h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.experience-card p ,
+.experience-card h6 {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.experience-footer {
+  margin-top: 2rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .filter-buttons {
+    gap: 1rem;
+  }
+
+  .filter-buttons button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .experience-section h1 {
+    font-size: 2rem;
+  }
+}

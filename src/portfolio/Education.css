@@ -1,0 +1,76 @@
+:root {
+  --bg-dark: #0d0d0d;
+  --card-bg: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+}
+
+.education-section {
+  background-color: var(--bg-dark);
+  padding: 0.1rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.education-heading {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 5rem;
+  justify-items: center;
+}
+
+.edu-card {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(56, 189, 248, 0.15);
+}
+
+.edu-card h2 {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.edu-card h3 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.edu-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0.3rem 0;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .education-heading {
+    font-size: 2rem;
+  }
+
+  .edu-card {
+    padding: 1.5rem;
+  }
+}
