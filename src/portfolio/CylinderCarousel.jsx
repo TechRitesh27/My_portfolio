@@ -2,11 +2,11 @@ import React from "react";
 import "./CylinderCarousel.css";
 
 const projects = [
-  { title: "Billing Software", desc: "Java + Spring Boot + Electron", view:"https://www.linkedin.com/posts/ritesh-ukade-8212092aa_java-springboot-reactjs-activity-7356950825958600704-Pmma?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEps-VkBvYlcsAfpQTuo1bvv-Fefquopv4g" },
-  { title: "Hotel Automation", desc: "Final Year Project. This project is under construction... \nIt will updated soon here" },
-  { title: "ASCII Website", desc: "ReactJS + Bootstrap", view:"https://www.linkedin.com/posts/ritesh-ukade-8212092aa_eventmanagement-digitalexperience-userengagement-activity-7341075617766903808-eN9z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEps-VkBvYlcsAfpQTuo1bvv-Fefquopv4g" },
-  { title: "Portfolio Site", desc: "ReactJS" },
-  { title: "EMI Calculator using AI", desc: "AI + Android Studio + Java", view:"https://www.linkedin.com/posts/ritesh-ukade-8212092aa_androiddevelopment-java-myfirstapp-activity-7262099675351003136-5j_t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEps-VkBvYlcsAfpQTuo1bvv-Fefquopv4g" },
+  { title: "Billing Software", desc: "The project is developed during the internship at Technogrowth to enhance my skills in full stack web development", view:"https://www.linkedin.com/posts/ritesh-ukade-8212092aa_java-springboot-reactjs-activity-7356950825958600704-Pmma?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEps-VkBvYlcsAfpQTuo1bvv-Fefquopv4g" },
+  { title: "ASCII Student Community Platform", desc: "A role-based ASCII Association platform with authentication, profile actions, and centralized record management using React, Spring Boot, MySQL, and API testing with Postman", view:"https://asciicomp.vercel.app/" },
+  { title: "Integrated Hotel Automation System", desc: "A Client based project developed using Spring Boot , React and MySQL for increasing the efficiency of hotels and reducing the cost ", view:"https://tinyurl.com/5y2t6xza" },
+  { title: "Portfolio Site", desc: "The site is used to showcase the projects and development with skills" },
+  { title: "EMI Calculator using AI", desc: "The basic EMI calculator developed for internship and exploring the andriod developemnt using Java", view:"https://www.linkedin.com/posts/ritesh-ukade-8212092aa_androiddevelopment-java-myfirstapp-activity-7262099675351003136-5j_t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEps-VkBvYlcsAfpQTuo1bvv-Fefquopv4g" },
 ];
 
 const CylinderCarousel = () => {
