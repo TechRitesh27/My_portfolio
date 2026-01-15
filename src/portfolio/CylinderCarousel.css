@@ -17,13 +17,13 @@
 }
 
 .cylinder-container {
-  perspective: 2000px;
+  perspective: 1800px;
   width: 100%;
-  height: 400px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cylinder {
@@ -31,29 +31,30 @@
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: spin 35s linear infinite;
+  animation: spin 50s linear infinite;
 }
 
 .card {
   width: 240px;
-  height: 180px;
+  min-height: 180px;
   background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
   border: 2px solid #00d9ff44;
   border-radius: 16px;
   position: absolute;
-  top: 125px;
+  top: 110px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: #e6e6e6;
-  box-shadow: 0 4px 20px rgba(0, 217, 255, 0.2);
-  transition: transform 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 217, 255, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   backdrop-filter: blur(6px);
   padding: 1rem;
   text-align: center;
+  overflow-y: auto;
 }
 
 .card h3 {
@@ -64,51 +65,88 @@
 }
 
 .card p {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   font-size: 0.9rem;
   color: #ccc;
+  line-height: 1.3;
 }
 
-.card a{
+.card a {
   text-decoration: none;
   color: #0a5dd2;
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
+
 .card a:hover {
   color: #00d9ff;
   text-decoration: underline;
 }
 
 .card:hover {
-  transform: scale(1.08);
+  transform: scale(1.08) translateX(-50%);
   z-index: 5;
-  transition: 0.4s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.4);
 }
 
 @keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+/* 📱 Responsive Fixes */
+@media screen and (max-width: 1024px) {
   .cylinder-container {
-    height: 300px;
+    perspective: 1500px;
+    height: 400px;
   }
 
   .card {
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    min-height: 150px;
+    font-size: 0.9rem;
+    padding: 0.9rem;
   }
 
   .carousel-title {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cylinder-container {
+    height: 380px;
+    perspective: 1200px;
+  }
+
+  .card {
+    width: 160px;
+    min-height: 140px;
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .carousel-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cylinder-container {
+    height: 320px;
+    perspective: 1000px;
+  }
+
+  .card {
+    width: 140px;
+    min-height: 120px;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .carousel-title {
+    font-size: 1.5rem;
   }
 }

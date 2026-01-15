@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useCallback } from "react";
 import Typed from "typed.js";
 import Particles from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -51,8 +52,9 @@ const HeroSection = () => {
 
       <div className="hero-left">
         <div className="hero-logo">
-          <img src="/favicon.png" alt="Ritesh's Logo" />
+          <img src="favicon.png" alt="Ritt Ukade(Logo)" /> {/* Font Awesome logo */}
         </div>
+
         <div className="hero-intro">
           <h5>Hello, I am</h5>
           <h1 className="gradient-text">Ritesh Ukade</h1>
@@ -61,7 +63,7 @@ const HeroSection = () => {
           </h4>
           <p className="hero-desc">
             Passionate about building high-performance web apps using Spring
-            Boot and React. Let’s innovate together.
+            Boot and React. <br /> Let’s innovate together.
           </p>
         </div>
 
@@ -70,7 +72,7 @@ const HeroSection = () => {
             View Projects
           </button>
           <button onClick={() => handleScroll("experience")}>Experience</button>
-          <a href="/resume.pdf" download className="resume-link">
+          <a href="/Ritesh_Resume.pdf" download className="resume-link">
             <button>Download Resume</button>
           </a>
         </div>
@@ -81,28 +83,28 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/github.png" alt="GitHub profile" />
+            <i className="fab fa-github"></i>
           </a>
           <a
             href="https://linkedin.com/in/ritesh-ukade-8212092aa/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/linkedin.png" alt="LinkedIn profile" />
+            <i className="fab fa-linkedin"></i>
           </a>
           <a
             href="https://instagram.com/rit_ukade27"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/instagram.png" alt="Instagram profile" />
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </div>
 
       <div className="hero-right">
         <div className="photo-placeholder">
-          <img src="/Ritesh_profile.png" alt="Ritesh's profile" />
+          <img src="/Ritesh_profile(1).png" alt="Ritesh's profile" />
         </div>
       </div>
     </div>

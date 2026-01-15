@@ -10,10 +10,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_imlaj7h",       // 🔁 replace with your EmailJS service ID
-        "template_ya9dg87",      // 🔁 replace with your EmailJS template ID
+        "service_imlaj7h",       // EmailJS service ID
+        "template_ya9dg87",      // EmailJS template ID
         form.current,
-        "5quR9IjicvCojFotD"   // 🔁 replace with your EmailJS public key
+        "5quR9IjicvCojFotD"   // EmailJS public key
       )
       .then(
         (result) => {

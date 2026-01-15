@@ -8,22 +8,23 @@ const allProjects = [
     company: "Logipool Infotech Pvt. Ltd., Pune",
     description: "Developed a full-stack application using Java, Spring Boot, and React.",
   },
-  { title: "Java Devloper Intern",
-    type: "coded", 
+  {
+    title: "Java Developer Intern",
+    type: "coded",
     company: "MotionCut Pvt. Ltd.",
     description: "Worked on small projects using Java.",
   },
-  { title: "Android Developer Intern",
-    type: "coded", 
+  {
+    title: "Android Developer Intern",
+    type: "coded",
     company: "Lending Buddha Pvt. Ltd.",
     description: "Developed an EMI Calculator Android application.",
   },
-  { title: "Vice President in ASCII Association",
-    type: "other", 
-    // company: "Lending Buddha Pvt. Ltd.",
-    description: "I had gained multiple skills like leadership, team management, and event organization during my tenure as Vice President in ASCII Association.",
+  {
+    title: "Vice President in ASCII Association",
+    type: "other",
+    description: "Gained leadership, team management, and event organization skills during my tenure as Vice President in ASCII Association.",
   },
-  
 ];
 
 const Experience = () => {
@@ -54,7 +55,7 @@ const Experience = () => {
         {filteredProjects.map((project, index) => (
           <div className="experience-card" key={index}>
             <h2>{project.title}</h2>
-            <h6>{project.company}</h6>
+            {project.company && <h6>{project.company}</h6>}
             <p>{project.description}</p>
           </div>
         ))}

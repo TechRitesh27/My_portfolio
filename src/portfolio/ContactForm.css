@@ -13,15 +13,8 @@
   font-weight: 700;
   letter-spacing: 2px;
   color: #0077cc;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   text-align: center;
-}
-
-.section-divider span {
-  font-size: 22px;
-  color: #c0c0c0;
-  margin-bottom: 40px;
-  display: inline-block;
 }
 
 .form-card {
@@ -79,4 +72,55 @@
 
 .form-submit button:hover {
   background-color: #005fa3;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .form-card {
+    padding: 30px 20px;
+  }
+
+  .form-card input,
+  .form-card textarea {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .form-submit button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-section {
+    padding: 40px 18px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .form-card {
+    padding: 20px 15px;
+  }
+
+  .form-card input,
+  .form-card textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .form-submit button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }

@@ -21,13 +21,13 @@ function Footer() {
 
         <div className="social-icons">
           <a href="https://github.com/TechRitesh27" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i> GitHub
+            <i className="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/ritesh-ukade-8212092aa/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i> LinkedIn
+            <i className="fab fa-linkedin"></i> 
           </a>
           <a href="mailto:riteshukade27@gmail.com">
-            <i className="fas fa-envelope"></i> Email
+            <i className="fas fa-envelope"></i>
           </a>
         </div>
       </div>

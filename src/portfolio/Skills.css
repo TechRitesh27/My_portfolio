@@ -1,4 +1,4 @@
-/* Theme Colors */
+/* 🎨 Theme Colors */
 :root {
   --primary-bg: #0d0d0d;
   --card-bg: #12161e;
@@ -32,41 +32,48 @@
   margin-bottom: 3rem;
 }
 
+/* 🟦 Responsive Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2.1rem;
   justify-items: center;
 }
 
 .skill-card {
   background-color: var(--card-bg);
-  padding: 1rem;
-  border-radius: 12px;
+  padding: 1.2rem;
+  border-radius: 14px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100px;
+  width: 90%;
+  max-width: 130px;
+  text-align: center;
+}
+
+.skill-icon {
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.25);
+  transform: scale(1.12);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
 }
 
-.skill-card img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
+.skill-card:hover .skill-icon {
+  color: #00e5ff;
+  transform: rotate(8deg);
 }
 
 .skill-card p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: var(--text-primary);
 }
 
-/* Mobile tweaks */
+/* 📱 Mobile tweaks */
 @media screen and (max-width: 600px) {
   .skills-header h1 {
     font-size: 2rem;
@@ -76,12 +83,20 @@
     font-size: 1rem;
   }
 
-  .skill-card {
-    width: 90px;
+  .skills-grid {
+    gap: 1.2rem;
   }
 
-  .skill-card img {
-    width: 50px;
-    height: 50px;
+  .skill-card {
+    max-width: 100px;
+    padding: 1rem;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem !important;
+  }
+
+  .skill-card p {
+    font-size: 0.8rem;
   }
 }
